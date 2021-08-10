@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="734.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsvFilter.MainWindowController">
+   <children>
+      <Slider fx:id="sldHueBegin" blockIncrement="2.0" layoutX="137.0" layoutY="39.0" max="180.0" prefHeight="18.0" prefWidth="1061.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="38.0" text="Hue(begin)" />
+      <Slider fx:id="sldHueEnd" blockIncrement="2.0" layoutX="137.0" layoutY="64.0" max="180.0" prefHeight="18.0" prefWidth="1061.0" value="255.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="63.0" text="Hue(end)" />
+      <Slider fx:id="sldSatMin" blockIncrement="2.0" layoutX="137.0" layoutY="91.0" max="255.0" prefHeight="18.0" prefWidth="1061.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="90.0" text="Sat.(min)" />
+      <Slider fx:id="sldSatMax" blockIncrement="2.0" layoutX="137.0" layoutY="116.0" max="255.0" prefHeight="14.0" prefWidth="310.0" value="255.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="115.0" text="Sat.(max)" />
+      <Slider fx:id="sldValMin" blockIncrement="2.0" layoutX="137.0" layoutY="140.0" max="255.0" prefHeight="14.0" prefWidth="310.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="139.0" text="Val.(min)" />
+      <Slider fx:id="sldValMax" blockIncrement="2.0" layoutX="137.0" layoutY="165.0" max="255.0" prefHeight="14.0" prefWidth="310.0" value="255.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="164.0" text="Val.(max)" />
+      <TextField fx:id="txtProjectName" layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="157.0" />
+      <Button fx:id="btnLoad" layoutX="177.0" layoutY="5.0" mnemonicParsing="false" onAction="#onBtLoadImageClicked" text="LoadImage" />
+      <Button fx:id="btnSave" layoutX="577.0" layoutY="5.0" mnemonicParsing="false" onAction="#onBtSaveClicked" text="Save" />
+      <ScrollPane layoutY="248.0" prefHeight="486.0" prefWidth="1198.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="280.0">
+         <content>
+            <Pane fx:id="sp" prefHeight="149.0" prefWidth="419.0">
+               <children>
+                  <ImageView fx:id="imageView" onMouseClicked="#onMouseClicked" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txtHueBegin" layoutX="81.0" layoutY="34.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="txtHueEnd" layoutX="81.0" layoutY="59.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="txtSatMin" layoutX="81.0" layoutY="86.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="txtSatMax" layoutX="81.0" layoutY="111.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="txtValMin" layoutX="81.0" layoutY="135.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="txtValMax" layoutX="81.0" layoutY="160.0" prefHeight="25.0" prefWidth="60.0" />
+      <Button fx:id="btnLoad1" layoutX="535.0" layoutY="5.0" mnemonicParsing="false" onAction="#onBtLoadClicked" text="Load" />
+      <ToggleButton fx:id="btnSwitch" layoutX="317.0" layoutY="5.0" mnemonicParsing="false" onAction="#onBtnSwitchClicked" text="Switch" />
+      <Slider fx:id="sldParam1" blockIncrement="2.0" layoutX="137.0" layoutY="190.0" prefHeight="14.0" prefWidth="310.0" value="50.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="189.0" text="Param1" />
+      <TextField fx:id="txtParam1" layoutX="81.0" layoutY="185.0" prefHeight="25.0" prefWidth="60.0" />
+      <Slider fx:id="sldParam2" blockIncrement="2.0" layoutX="137.0" layoutY="215.0" max="60.0" prefHeight="14.0" prefWidth="310.0" value="30.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="16.0" layoutY="214.0" text="Param2" />
+      <TextField fx:id="txtParam2" layoutX="81.0" layoutY="210.0" prefHeight="25.0" prefWidth="60.0" />
+      <Button fx:id="btnSearchSegment" layoutX="852.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBtnSearchSegmentClicked" prefHeight="31.0" prefWidth="166.0" text="Search segment" />
+      <Button fx:id="btnSearchSkin" layoutX="1018.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBtnSearchSkinClicked" prefHeight="31.0" prefWidth="166.0" text="Search skinplate" />
+      <Label fx:id="txtXY" layoutX="14.0" layoutY="251.0" prefHeight="21.0" prefWidth="127.0" text="(X:9999, Y:9999)" />
+      <Label fx:id="txtRGB" layoutX="151.0" layoutY="251.0" prefHeight="21.0" prefWidth="151.0" text="(R:999, G:999, B:999)" />
+      <Label fx:id="txtHSV" layoutX="322.0" layoutY="251.0" prefHeight="21.0" prefWidth="151.0" text="(H:999, S:999, V:999)" />
+      <Button fx:id="btnSplitIntoHSV" layoutX="252.0" layoutY="5.0" mnemonicParsing="false" onAction="#onBtnSplitIntoHSVClicked" text="Split HSV" />
+      <TextField fx:id="txtProjectName1" layoutX="378.0" layoutY="5.0" prefHeight="25.0" prefWidth="157.0" />
+      <ComboBox fx:id="selFilter" layoutX="631.0" layoutY="5.0" onAction="#onSelFilterChanged" prefWidth="150.0" />
+   </children>
+</AnchorPane>

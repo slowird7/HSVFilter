@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+	<laser>
+		<filter h_min="140" h_max="10" s_min="0" s_max="255" v_min="40" v_max="255"/>
+	</laser>
+	<scalemarker>
+		<filter h_min="30" h_max="80" s_min="85" s_max="255" v_min="40" v_max="255"/>
+	</scalemarker>
+	<glare>
+		<filter h_min="142" h_max="30" s_min="0" s_max="2" v_min="55" v_max="255" size_min="100"/>
+	</glare>
+	<segment>
+		<line angle_min="-5" angle_max="5" length_min="30" gap_max="25"/>
+	</segment>
+	<skinplate>
+		<line angle_min="-40" angle_max="-15" length_min="70" gap_max="50"/>
+	</skinplate>
+	<correction>
+		<odc kappa="0.0" alpha="0.0"/>
+	</correction>
+</parameters>	

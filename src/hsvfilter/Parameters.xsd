@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+    <xsd:element name="parameters" type="Parameters"/>
+    <xsd:complexType name="Parameters">
+        <xsd:sequence>
+            <xsd:element name="laser" type="Laser"/>
+            <xsd:element name="scalemarker" type="Scalemarker"/>
+            <xsd:element name="glare" type="Glare"/>
+            <xsd:element name="segment" type="Segment"/>
+            <xsd:element name="skinplate" type="Skinplate"/>
+            <xsd:element name="correction" type="Correction"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Laser">
+        <xsd:sequence>
+            <xsd:element name="filter" type="Filter" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Scalemarker">
+        <xsd:sequence>
+            <xsd:element name="filter" type="Filter" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Glare">
+        <xsd:sequence>
+            <xsd:element name="filter" type="Filter" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Segment">
+        <xsd:sequence>
+            <xsd:element name="line" type="Line" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Skinplate">
+        <xsd:sequence>
+            <xsd:element name="line" type="Line" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Correction">
+        <xsd:sequence>
+            <xsd:element name="odc" type="ODC" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Filter">
+        <xsd:attribute name="h_min" type="xsd:double" />
+        <xsd:attribute name="h_max" type="xsd:double" />
+        <xsd:attribute name="s_min" type="xsd:double" />
+        <xsd:attribute name="s_max" type="xsd:double" />
+        <xsd:attribute name="v_min" type="xsd:double" />
+        <xsd:attribute name="v_max" type="xsd:double" />
+        <xsd:attribute name ="size_min" type="xsd:double" />
+    </xsd:complexType>
+    <xsd:complexType name="Line">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:double">
+                <xsd:attribute name="angle_min" type="xsd:double" />
+                <xsd:attribute name="angle_max" type="xsd:double" />
+                <xsd:attribute name="length_min" type="xsd:double" />
+                <xsd:attribute name="gap_max" type="xsd:double" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="ODC">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:double">
+                <xsd:attribute name="kappa" type="xsd:double" />
+                <xsd:attribute name="alpha" type="xsd:double" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+</xsd:schema>

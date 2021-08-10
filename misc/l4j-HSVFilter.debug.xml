@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>console</headerType>
+  <jar>C:\Users\n_otsuka\Documents\Git_Repos\Java_Projects\disposX\exe\DisposX.jar</jar>
+  <outfile>C:\Users\n_otsuka\Documents\Git_Repos\Java_Projects\disposX\exe\DisposX.debug.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>true</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\n_otsuka\Documents\Git_Repos\Java_Projects\disposX\src\disposx\icon\icon.ico</icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.6.0_000</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+    <maxHeapSize>1000</maxHeapSize>
+    <opt>-Djna.library.path=.\win32-x86-64 -Djna.debug_load.jna=true -Djna.debug_load=false -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8000,suspend=y</opt>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.4.0.1441</fileVersion>
+    <txtFileVersion>1.4.0.1441bdebug</txtFileVersion>
+    <fileDescription>計測キング</fileDescription>
+    <copyright>(株)きんそく</copyright>
+    <productVersion>1.4.0.1441</productVersion>
+    <txtProductVersion>1.4.0.1441bdebug</txtProductVersion>
+    <productName>計測キング</productName>
+    <companyName>(株)きんそく</companyName>
+    <internalName>DisposX</internalName>
+    <originalFilename>DisposX.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>JAPANESE</language>
+  </versionInfo>
+</launch4jConfig>

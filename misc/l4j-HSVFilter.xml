@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>console</headerType>
+  <jar>C:\Users\n_otsuka\Documents\NetBeansProjects\HSVFilter\exe\HSVFilter.jar</jar>
+  <outfile>C:\Users\n_otsuka\Documents\NetBeansProjects\HSVFilter\exe\HSVFilter.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>true</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon></icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.6.0_000</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+    <maxHeapSize>1000</maxHeapSize>
+    <opt>-Dlog4j.configurationFile=log4j2.xml -Djna.debug_load=false</opt>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0.0</txtFileVersion>
+    <fileDescription>HSVFilter</fileDescription>
+    <copyright>(株)きんそく</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0.0.0</txtProductVersion>
+    <productName>HSVFilter</productName>
+    <companyName>(株)きんそく</companyName>
+    <internalName>HSVFilter</internalName>
+    <originalFilename>HSVFilter.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>JAPANESE</language>
+  </versionInfo>
+</launch4jConfig>
